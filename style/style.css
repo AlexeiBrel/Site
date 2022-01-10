@@ -472,42 +472,53 @@
   .header .header-bottom.active {
     left: 0;
   }
-  .main {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .main .hero {
-    position: relative;
-    background: url(../img/bgpng.png) center no-repeat;
-    background-size: cover;
-    padding: 0 10px;
-  }
   .main .hero .hero-title {
-    max-width: 1366px;
-    margin: 0 auto;
     padding: 20px 0;
-    min-height: calc(100vh - 152.2px);
-    width: 100%;
   }
   .main .hero .hero-title h1 {
-    font-style: normal;
-    font-weight: bold;
     font-size: 32px;
     line-height: 36px;
-    color: #FFFFFF;
   }
   .main .hero .hero-title ul {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 20px;
   }
   .main .hero .hero-title ul li {
     padding: 5px 25px;
     background: url(../img/icons/check-mark.png) center no-repeat;
     background-size: 22px 22px;
     background-position: 0 center;
+  }
+  .main .hero .hero-title .heroBtn {
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    background: #00BB34;
+    -webkit-box-shadow: 2px 8px 30px #00BB34;
+            box-shadow: 2px 8px 30px #00BB34;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 40px;
+  }
+  .main .hero .hero-title .heroBtn:hover {
+    background: #fdc312;
+    -webkit-box-shadow: 2px 8px 30px #fdc312;
+            box-shadow: 2px 8px 30px #fdc312;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .main .hero .hero-title {
+    padding: 20px 0;
+  }
+  .main .hero .hero-title h1 {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
