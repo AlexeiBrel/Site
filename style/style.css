@@ -363,6 +363,9 @@
     margin: 7px 0;
     font-size: 18px;
   }
+  .header .menu-contact .social__icons a {
+    font-size: 20px;
+  }
   .header .header-top {
     width: 100%;
     display: -webkit-box;
