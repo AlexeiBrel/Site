@@ -304,8 +304,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   .header .close .navbar-toggle {
     font-size: 25px;
@@ -480,45 +480,43 @@
     line-height: 36px;
   }
   .main .hero .hero-title ul {
-    color: #FFFFFF;
     font-size: 17px;
     margin-top: 20px;
   }
-  .main .hero .hero-title ul li {
-    padding: 5px 25px;
-    background: url(../img/icons/check-mark.png) center no-repeat;
-    background-size: 22px 22px;
-    background-position: 0 center;
-  }
   .main .hero .hero-title .heroBtn {
-    width: 200px;
-    height: 40px;
-    border-radius: 12px;
-    background: #00BB34;
-    -webkit-box-shadow: 2px 8px 30px #00BB34;
-            box-shadow: 2px 8px 30px #00BB34;
-    border-radius: 10px;
-    border: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 19px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     margin-top: 40px;
-  }
-  .main .hero .hero-title .heroBtn:hover {
-    background: #fdc312;
-    -webkit-box-shadow: 2px 8px 30px #fdc312;
-            box-shadow: 2px 8px 30px #fdc312;
   }
 }
 
 @media all and (max-width: 430px) {
+  .header .header-top .header-logo img {
+    max-width: 100%;
+    width: 60px;
+    height: auto;
+  }
+  .header .header-top .header-logo p {
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
   .main .hero .hero-title {
     padding: 20px 0;
   }
   .main .hero .hero-title h1 {
     font-size: 24px;
     line-height: 36px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .header .header-top .header-logo img {
+    max-width: 100%;
+    width: 60px;
+    height: auto;
+  }
+  .header .header-top .header-logo p {
+    margin-left: 4px;
+    color: #FFFFFF;
+    font-size: 13px;
   }
 }
