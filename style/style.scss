@@ -168,7 +168,6 @@ $height) {
             }
             .menu__link:hover {
                 border-top: 2px solid #fdc312;
-                // color: #fdc312;
             }
         }
     }
@@ -184,7 +183,6 @@ $height) {
         background: url(../img/bgpng.png) center no-repeat;
         background-size: cover;
         padding: 0 10px;
-        z-index: -1;
         .hero-title {
             max-width: 1366px;
             margin: 0 auto;
@@ -359,6 +357,42 @@ $height) {
         }
         .header-bottom.active {
             left: 0;
+        }
+    }
+    .main {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        .hero {
+            position: relative;
+            background: url(../img/bgpng.png) center no-repeat;
+            background-size: cover;
+            padding: 0 10px;
+            .hero-title {
+                max-width: 1366px;
+                margin: 0 auto;
+                padding: 20px 0;
+                min-height: calc(100vh - 152.2px);
+                width: 100%;
+                h1 {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+                ul {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    li {
+                        padding: 5px 25px;
+                        background: url(../img/icons/check-mark.png) center no-repeat;
+                        background-size: 22px 22px;
+                        background-position: 0 center;
+                    }
+                }
+            }
         }
     }
 }
