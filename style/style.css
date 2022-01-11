@@ -603,7 +603,7 @@
 .main .pricelist .pricelist-content .table {
   max-width: 1170px;
   width: 100%;
-  margin: 10px auto;
+  margin: 10px auto 30px;
   color: #222;
   font-weight: 500;
   background-color: #fff;
