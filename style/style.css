@@ -366,6 +366,90 @@
   margin: auto;
 }
 
+.main .answer-question {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.main .answer-question .answer-question-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main .answer-question .answer-question-content .answer-question-img {
+  max-width: 800px;
+}
+
+.main .answer-question .answer-question-content .answer-question-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.main .answer-question .answer-question-content .answer-question-title {
+  min-width: 600px;
+  max-width: 600px;
+  padding: 50px 20px;
+}
+
+.main .answer-question .answer-question-content .answer-question-title h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 119.69%;
+  color: #000000;
+}
+
+.main .answer-question .answer-question-content .answer-question-title p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 119.69%;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.main .answer-question .answer-question-content .answer-question-title .btnPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  background: #00BB34;
+  -webkit-box-shadow: 2px 8px 30px #00BB34;
+          box-shadow: 2px 8px 30px #00BB34;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.main .answer-question .answer-question-content .answer-question-title .btnPrice:hover {
+  background: #fdc312;
+  -webkit-box-shadow: 2px 8px 30px #fdc312;
+          box-shadow: 2px 8px 30px #fdc312;
+}
+
 @media all and (max-width: 1023px) {
   .main .trigger .trigger-content {
     display: -ms-grid;
@@ -378,6 +462,16 @@
     height: 280px;
     background: -webkit-gradient(linear, left top, left bottom, from(#A6DBF5), color-stop(97.92%, #451874));
     background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%);
+  }
+  .main .answer-question .answer-question-content .answer-question-title {
+    min-width: 430px;
+    padding: 50px 20px;
+  }
+  .main .answer-question .answer-question-content .answer-question-title h3 {
+    font-size: 22px;
+  }
+  .main .answer-question .answer-question-content .answer-question-title p {
+    font-size: 15px;
   }
 }
 
@@ -590,6 +684,32 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#A6DBF5), color-stop(97.92%, #451874));
     background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%);
   }
+  .main .answer-question .answer-question-content .answer-question-img {
+    max-width: 100%;
+    padding: 0 10px;
+    min-height: 350px;
+  }
+  .main .answer-question .answer-question-content .answer-question-img img {
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+  }
+  .main .answer-question .answer-question-content .answer-question-title {
+    min-width: 280px;
+    padding: 50px 20px;
+    position: absolute;
+    text-align: center;
+  }
+  .main .answer-question .answer-question-content .answer-question-title h3 {
+    color: #FFFFFF;
+  }
+  .main .answer-question .answer-question-content .answer-question-title p {
+    color: #FFFFFF;
+  }
+  .main .answer-question .answer-question-content .answer-question-title .btnPrice {
+    margin: 20px auto 0;
+    height: 40px;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -615,6 +735,16 @@
   .main .hero .hero-title h1 {
     font-size: 24px;
     line-height: 36px;
+  }
+  .main .answer-question .answer-question-content .answer-question-title {
+    padding: 0px 20px;
+    top: 50px;
+  }
+  .main .answer-question .answer-question-content .answer-question-title h3 {
+    font-size: 20px;
+  }
+  .main .answer-question .answer-question-content .answer-question-title p {
+    font-size: 14px;
   }
 }
 
