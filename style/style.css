@@ -743,9 +743,6 @@
   .main .answer-question .answer-question-content .answer-question-title h3 {
     font-size: 20px;
   }
-  .main .answer-question .answer-question-content .answer-question-title p {
-    font-size: 14px;
-  }
 }
 
 @media all and (max-width: 350px) {
