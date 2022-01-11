@@ -337,7 +337,7 @@ $height) {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-top: 40px;
+            margin: 50px 0;
             .pricelist-item {
                 display: flex;
                 flex-direction: column;
@@ -378,6 +378,75 @@ $height) {
                     font-size: 55px;
                     line-height: 64px;
                     text-align: center;
+                }
+            }
+        }
+        .pricelist-content {
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .btnOrder {
+                @include button(200px,
+                10px,
+                50px);
+                box-shadow: 2px 5px 10px #00BB34;
+            }
+            .btnOrder:hover {
+                @include buttonHover();
+                box-shadow: 2px 5px 10px #fdc312;
+            }
+            .btnTable {
+                display: none;
+            }
+            .table {
+                max-width: 1170px;
+                width: 100%;
+                margin: 10px auto;
+                color: #222;
+                font-weight: 500;
+                background-color: #fff;
+                border-radius: 0 0 20px 20px;
+                padding: 20px;
+                box-shadow: 0px 17px 35px -10px #000000;
+                border-spacing: 0;
+                td {
+                    padding: 15px 20px;
+                }
+                tbody tr:nth-child(odd) {
+                    background: rgba(228, 249, 255, 0.68);
+                }
+                tr td:nth-child(1) {
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+                tr td:nth-child(2) {
+                    min-width: 131px;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 35px;
+                    color: #FF5C00;
+                }
+                tr td:nth-child(3) {
+                    min-width: 120px;
+                    width: 220px;
+                }
+                tfoot {
+                    tr {
+                        max-width: 1170px;
+                        width: 100%;
+                        background: rgba(149, 168, 255, 0.68);
+                    }
+                    tr td {
+                        border-radius: 0 0 20px 20px;
+                    }
+                    .btnDetailedPrices {
+                        font-style: italic;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: rgb(255, 255, 255);
+                    }
                 }
             }
         }
@@ -652,6 +721,18 @@ $height) {
                     }
                 }
             }
+            .pricelist-content {
+                margin: 30px 0;
+                display: flex;
+                .btnTable {
+                    display: flex;
+                }
+                .table {
+                    tr td:nth-child(3) {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -683,6 +764,17 @@ $height) {
                         width: 70px;
                         height: 70px;
                         font-size: 24px;
+                    }
+                }
+            }
+            .pricelist-content {
+                .table {
+                    tr td:nth-child(1) {
+                        font-size: 16px;
+                    }
+                    tr td:nth-child(2) {
+                        min-width: 105px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -758,6 +850,43 @@ $height) {
                         width: 90px;
                         height: 90px;
                         font-size: 28px;
+                    }
+                }
+            }
+            .pricelist-content {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .table {
+                    tr {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    td {
+                        text-align: center;
+                        padding: 5px 15px;
+                    }
+                    tr td:nth-child(1) {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                    tr td:nth-child(2) {
+                        font-weight: bold;
+                        line-height: 30px;
+                        color: #FF5C00;
+                    }
+                    tfoot {
+                        tr {
+                            display: table-row;
+                        }
+                        .btnDetailedPrices {
+                            font-style: italic;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 14px;
+                        }
                     }
                 }
             }

@@ -482,7 +482,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin: 50px 0;
 }
 
 .main .pricelist .pricelist-diagnostics .pricelist-item {
@@ -545,6 +545,117 @@
   font-size: 55px;
   line-height: 64px;
   text-align: center;
+}
+
+.main .pricelist .pricelist-content {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .pricelist .pricelist-content .btnOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: #00BB34;
+  -webkit-box-shadow: 2px 8px 30px #00BB34;
+          box-shadow: 2px 8px 30px #00BB34;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 2px 5px 10px #00BB34;
+          box-shadow: 2px 5px 10px #00BB34;
+}
+
+.main .pricelist .pricelist-content .btnOrder:hover {
+  background: #fdc312;
+  -webkit-box-shadow: 2px 8px 30px #fdc312;
+          box-shadow: 2px 8px 30px #fdc312;
+  -webkit-box-shadow: 2px 5px 10px #fdc312;
+          box-shadow: 2px 5px 10px #fdc312;
+}
+
+.main .pricelist .pricelist-content .btnTable {
+  display: none;
+}
+
+.main .pricelist .pricelist-content .table {
+  max-width: 1170px;
+  width: 100%;
+  margin: 10px auto;
+  color: #222;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 17px 35px -10px #000000;
+          box-shadow: 0px 17px 35px -10px #000000;
+  border-spacing: 0;
+}
+
+.main .pricelist .pricelist-content .table td {
+  padding: 15px 20px;
+}
+
+.main .pricelist .pricelist-content .table tbody tr:nth-child(odd) {
+  background: rgba(228, 249, 255, 0.68);
+}
+
+.main .pricelist .pricelist-content .table tr td:nth-child(1) {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.main .pricelist .pricelist-content .table tr td:nth-child(2) {
+  min-width: 131px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #FF5C00;
+}
+
+.main .pricelist .pricelist-content .table tr td:nth-child(3) {
+  min-width: 120px;
+  width: 220px;
+}
+
+.main .pricelist .pricelist-content .table tfoot tr {
+  max-width: 1170px;
+  width: 100%;
+  background: rgba(149, 168, 255, 0.68);
+}
+
+.main .pricelist .pricelist-content .table tfoot tr td {
+  border-radius: 0 0 20px 20px;
+}
+
+.main .pricelist .pricelist-content .table tfoot .btnDetailedPrices {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
 }
 
 @media all and (max-width: 1023px) {
@@ -846,6 +957,20 @@
     font-size: 30px;
     right: -20px;
   }
+  .main .pricelist .pricelist-content {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .pricelist .pricelist-content .btnTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .pricelist .pricelist-content .table tr td:nth-child(3) {
+    display: none;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -873,6 +998,13 @@
     width: 70px;
     height: 70px;
     font-size: 24px;
+  }
+  .main .pricelist .pricelist-content .table tr td:nth-child(1) {
+    font-size: 16px;
+  }
+  .main .pricelist .pricelist-content .table tr td:nth-child(2) {
+    min-width: 105px;
+    font-size: 20px;
   }
 }
 
@@ -939,6 +1071,53 @@
     width: 90px;
     height: 90px;
     font-size: 28px;
+  }
+  .main .pricelist .pricelist-content {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .pricelist .pricelist-content .table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .pricelist .pricelist-content .table td {
+    text-align: center;
+    padding: 5px 15px;
+  }
+  .main .pricelist .pricelist-content .table tr td:nth-child(1) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .main .pricelist .pricelist-content .table tr td:nth-child(2) {
+    font-weight: bold;
+    line-height: 30px;
+    color: #FF5C00;
+  }
+  .main .pricelist .pricelist-content .table tfoot tr {
+    display: table-row;
+  }
+  .main .pricelist .pricelist-content .table tfoot .btnDetailedPrices {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 14px;
   }
 }
 
