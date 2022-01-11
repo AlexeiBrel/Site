@@ -450,6 +450,103 @@
           box-shadow: 2px 8px 30px #fdc312;
 }
 
+.main .pricelist {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 100px auto 0;
+}
+
+.main .pricelist h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main .pricelist p {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.main .pricelist .pricelist-diagnostics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.main .pricelist .pricelist-diagnostics .pricelist-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .pricelist .pricelist-diagnostics .pricelist-item h3 {
+  text-align: center;
+  width: 250px;
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 119.69%;
+  text-align: center;
+  color: #000000;
+}
+
+.main .pricelist .pricelist-diagnostics .pricelist-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 366px;
+  height: 366px;
+  border-radius: 50%;
+  border: 12px solid rgba(76, 26, 139, 0.42);
+  position: relative;
+}
+
+.main .pricelist .pricelist-diagnostics .pricelist-img img {
+  margin: auto;
+}
+
+.main .pricelist .pricelist-diagnostics .pricelist-img .pricelistimg-price {
+  position: absolute;
+  background: #5F24A8;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: -40px;
+  bottom: -10px;
+  color: #ffffff;
+  font-size: 55px;
+  line-height: 64px;
+  text-align: center;
+}
+
 @media all and (max-width: 1023px) {
   .main .trigger .trigger-content {
     display: -ms-grid;
@@ -472,6 +569,25 @@
   }
   .main .answer-question .answer-question-content .answer-question-title p {
     font-size: 15px;
+  }
+  .main .pricelist {
+    margin: 60px auto 0;
+  }
+  .main .pricelist .pricelist-diagnostics {
+    margin-top: 40px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img {
+    width: 280px;
+    height: 280px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img img {
+    width: 180px;
+    height: 180px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img .pricelistimg-price {
+    width: 120px;
+    height: 120px;
+    font-size: 45px;
   }
 }
 
@@ -710,11 +826,53 @@
     margin: 20px auto 0;
     height: 40px;
   }
+  .main .pricelist {
+    margin: 60px auto 0;
+  }
+  .main .pricelist .pricelist-diagnostics {
+    margin-top: 40px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img {
+    width: 230px;
+    height: 230px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img img {
+    width: 130px;
+    height: 130px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img .pricelistimg-price {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    right: -20px;
+  }
 }
 
 @media all and (max-width: 560px) {
   .main .trigger .trigger-item {
     width: 100%;
+  }
+  .main .pricelist .pricelist-diagnostics {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-item h3 {
+    width: 200px;
+    font-size: 16px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img {
+    width: 190px;
+    height: 190px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img img {
+    width: 90px;
+    height: 90px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img .pricelistimg-price {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
   }
 }
 
@@ -742,6 +900,45 @@
   }
   .main .answer-question .answer-question-content .answer-question-title h3 {
     font-size: 20px;
+  }
+  .main .pricelist {
+    margin-top: 0;
+  }
+  .main .pricelist h2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .main .pricelist .pricelist-diagnostics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-item {
+    margin-bottom: 30px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-item h3 {
+    width: 260px;
+    font-size: 20px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img {
+    width: 240px;
+    height: 240px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img img {
+    width: 150px;
+    height: 150px;
+  }
+  .main .pricelist .pricelist-diagnostics .pricelist-img .pricelistimg-price {
+    width: 90px;
+    height: 90px;
+    font-size: 28px;
   }
 }
 

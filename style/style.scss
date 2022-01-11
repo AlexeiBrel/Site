@@ -314,6 +314,74 @@ $height) {
             }
         }
     }
+    .pricelist {
+        max-width: 1366px;
+        width: 100%;
+        padding: 0 10px;
+        margin: 100px auto 0;
+        h2 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 33px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        p {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: #000000;
+            margin-top: 15px;
+        }
+        .pricelist-diagnostics {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 40px;
+            .pricelist-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    text-align: center;
+                    width: 250px;
+                    margin-top: 35px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 119.69%;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+            .pricelist-img {
+                display: flex;
+                width: 366px;
+                height: 366px;
+                border-radius: 50%;
+                border: 12px solid rgba(76, 26, 139, 0.42);
+                position: relative;
+                img {
+                    margin: auto;
+                }
+                .pricelistimg-price {
+                    position: absolute;
+                    background: #5F24A8;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: -40px;
+                    bottom: -10px;
+                    color: #ffffff;
+                    font-size: 55px;
+                    line-height: 64px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 .footer {}
@@ -341,6 +409,25 @@ $height) {
                     }
                     p {
                         font-size: 15px;
+                    }
+                }
+            }
+        }
+        .pricelist {
+            margin: 60px auto 0;
+            .pricelist-diagnostics {
+                margin-top: 40px;
+                .pricelist-img {
+                    width: 280px;
+                    height: 280px;
+                    img {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    .pricelistimg-price {
+                        width: 120px;
+                        height: 120px;
+                        font-size: 45px;
                     }
                 }
             }
@@ -546,6 +633,26 @@ $height) {
                 }
             }
         }
+        .pricelist {
+            margin: 60px auto 0;
+            .pricelist-diagnostics {
+                margin-top: 40px;
+                .pricelist-img {
+                    width: 230px;
+                    height: 230px;
+                    img {
+                        width: 130px;
+                        height: 130px;
+                    }
+                    .pricelistimg-price {
+                        width: 90px;
+                        height: 90px;
+                        font-size: 30px;
+                        right: -20px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -554,6 +661,30 @@ $height) {
         .trigger {
             .trigger-item {
                 width: 100%;
+            }
+        }
+        .pricelist {
+            .pricelist-diagnostics {
+                justify-content: space-between;
+                .pricelist-item {
+                    h3 {
+                        width: 200px;
+                        font-size: 16px;
+                    }
+                }
+                .pricelist-img {
+                    width: 190px;
+                    height: 190px;
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    .pricelistimg-price {
+                        width: 70px;
+                        height: 70px;
+                        font-size: 24px;
+                    }
+                }
             }
         }
     }
@@ -594,9 +725,40 @@ $height) {
                     h3 {
                         font-size: 20px;
                     }
-                    // p {
-                    //     font-size: 14px;
-                    // }
+                }
+            }
+        }
+        .pricelist {
+            margin-top: 0;
+            h2 {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 33px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+            .pricelist-diagnostics {
+                flex-direction: column;
+                justify-content: space-between;
+                .pricelist-item {
+                    margin-bottom: 30px;
+                    h3 {
+                        width: 260px;
+                        font-size: 20px;
+                    }
+                }
+                .pricelist-img {
+                    width: 240px;
+                    height: 240px;
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .pricelistimg-price {
+                        width: 90px;
+                        height: 90px;
+                        font-size: 28px;
+                    }
                 }
             }
         }
