@@ -643,7 +643,7 @@
 .main .pricelist .pricelist-content .table tfoot tr {
   max-width: 1170px;
   width: 100%;
-  background: rgba(149, 168, 255, 0.68);
+  background: rgba(149, 168, 255, 0.5);
 }
 
 .main .pricelist .pricelist-content .table tfoot tr td {
@@ -652,10 +652,225 @@
 
 .main .pricelist .pricelist-content .table tfoot .btnDetailedPrices {
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  color: white;
+  color: #FF5C00;
+}
+
+.main .urgent-repair {
+  width: 100%;
+  background: url(../img/bg-urgent.png) center no-repeat;
+  background-size: auto;
+  padding: 100px 0;
+}
+
+.main .urgent-repair .urgent-repair-content {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.main .urgent-repair .urgent-repair-title {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 17px;
+  padding: 25px;
+}
+
+.main .urgent-repair h2 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.main .urgent-repair h2 p {
+  color: #FF5C00;
+}
+
+.main .urgent-repair h3 {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main .urgent-repair .urgent-repair-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-col {
+  max-width: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .urgent-repair .urgent-repair-block ul {
+  width: 260px;
+  text-align: left;
+}
+
+.main .urgent-repair .urgent-repair-block ul li {
+  padding: 10px 0 10px 40px;
+  background: url(../img/icons/star.png) no-repeat;
+  background-size: 30px 30px;
+  background-position: left 0 center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-contact {
+  width: 260px;
+  margin: 20px auto 0;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-contact h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-contact .btnUrgentRepair {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fdc312;
+  -webkit-box-shadow: 2px 8px 30px #fdc312;
+          box-shadow: 2px 8px 30px #fdc312;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form {
+  background: #FCFCFC;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form h3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(63.54%, #FF5C00), to(rgba(255, 92, 0, 0)));
+  background: linear-gradient(180deg, #FF5C00 63.54%, rgba(255, 92, 0, 0) 100%);
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 30px 0;
+  width: 100%;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form input {
+  border: 2px solid #CACACA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form .btnSendPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background: #00BB34;
+  -webkit-box-shadow: 2px 8px 30px #00BB34;
+          box-shadow: 2px 8px 30px #00BB34;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form .btnSendPhone:hover {
+  background: #fdc312;
+  -webkit-box-shadow: 2px 8px 30px #fdc312;
+          box-shadow: 2px 8px 30px #fdc312;
+}
+
+.main .urgent-repair .urgent-repair-block .urgent-repair-form p {
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #808080;
 }
 
 @media all and (max-width: 1023px) {
@@ -971,6 +1186,23 @@
   .main .pricelist .pricelist-content .table tr td:nth-child(3) {
     display: none;
   }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-col {
+    max-width: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .urgent-repair .urgent-repair-block .col {
+    display: none;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -1005,6 +1237,12 @@
   .main .pricelist .pricelist-content .table tr td:nth-child(2) {
     min-width: 105px;
     font-size: 20px;
+  }
+  .main .urgent-repair .urgent-repair-title {
+    padding: 25px 5px;
+  }
+  .main .urgent-repair h2 {
+    font-size: 18px;
   }
 }
 
@@ -1119,9 +1357,107 @@
     font-size: 16px;
     line-height: 14px;
   }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-col {
+    max-width: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .urgent-repair .urgent-repair-block .col {
+    display: none;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form {
+    background: #FCFCFC;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form h3 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(63.54%, #FF5C00), to(rgba(255, 92, 0, 0)));
+    background: linear-gradient(180deg, #FF5C00 63.54%, rgba(255, 92, 0, 0) 100%);
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 17.5px;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 15px 20px;
+    width: 100%;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form input {
+    border: 2px solid #CACACA;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form .btnSendPhone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #00BB34;
+    -webkit-box-shadow: 2px 8px 30px #00BB34;
+            box-shadow: 2px 8px 30px #00BB34;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form .send-phone-form .btnSendPhone:hover {
+    background: #fdc312;
+    -webkit-box-shadow: 2px 8px 30px #fdc312;
+            box-shadow: 2px 8px 30px #fdc312;
+  }
+  .main .urgent-repair .urgent-repair-block .urgent-repair-form p {
+    margin: 10px 0 20px;
+  }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 351px) {
   .header .header-top .header-logo img {
     max-width: 100%;
     width: 60px;
@@ -1131,5 +1467,11 @@
     margin-left: 4px;
     color: #FFFFFF;
     font-size: 13px;
+  }
+  .main .urgent-repair .urgent-repair-title {
+    padding: 25px 5px;
+  }
+  .main .urgent-repair h2 {
+    font-size: 16px;
   }
 }

@@ -435,18 +435,157 @@ $height) {
                     tr {
                         max-width: 1170px;
                         width: 100%;
-                        background: rgba(149, 168, 255, 0.68);
+                        background: rgba(149, 168, 255, 0.5);
                     }
                     tr td {
                         border-radius: 0 0 20px 20px;
                     }
                     .btnDetailedPrices {
                         font-style: italic;
-                        font-weight: normal;
+                        font-weight: bold;
                         font-size: 16px;
                         line-height: 19px;
-                        color: rgb(255, 255, 255);
+                        color: #FF5C00;
                     }
+                }
+            }
+        }
+    }
+    .urgent-repair {
+        width: 100%;
+        background: url(../img/bg-urgent.png) center no-repeat;
+        background-size: auto;
+        padding: 100px 0;
+        .urgent-repair-content {
+            max-width: 1366px;
+            width: 100%;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .urgent-repair-title {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 17px;
+            padding: 25px;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #000000;
+            p {
+                color: #FF5C00;
+            }
+        }
+        h3 {
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .urgent-repair-block {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            max-width: 1024px;
+            width: 100%;
+            .urgent-repair-col {
+                max-width: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            ul {
+                width: 260px;
+                text-align: left;
+                li {
+                    padding: 10px 0 10px 40px;
+                    background: url(../img/icons/star.png) no-repeat;
+                    background-size: 30px 30px;
+                    background-position: left 0 center;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 35px;
+                    color: #FFFFFF;
+                }
+            }
+            .urgent-repair-contact {
+                width: 260px;
+                margin: 20px auto 0;
+                h4 {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                .btnUrgentRepair {
+                    width: 100%;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background: #fdc312;
+                    box-shadow: 2px 8px 30px #fdc312;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #000000;
+                    margin-top: 10px;
+                }
+            }
+            .urgent-repair-form {
+                background: #FCFCFC;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 400px;
+                width: 100%;
+                h3 {
+                    background: linear-gradient(180deg, #FF5C00 63.54%, rgba(255, 92, 0, 0) 100%);
+                    border-radius: 20px;
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 15px 0;
+                    font-size: 20px;
+                }
+                .send-phone-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 50px 30px 0;
+                    width: 100%;
+                    input {
+                        border: 2px solid #CACACA;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        height: 50px;
+                        width: 100%;
+                        padding: 0 10px
+                    }
+                    .btnSendPhone {
+                        @include button(100%,
+                        10px,
+                        40px);
+                        margin-top: 30px;
+                    }
+                    .btnSendPhone:hover {
+                        @include buttonHover();
+                    }
+                }
+                p {
+                    margin: 20px 0;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #808080;
                 }
             }
         }
@@ -734,6 +873,20 @@ $height) {
                 }
             }
         }
+        .urgent-repair {
+            .urgent-repair-block {
+                .urgent-repair-col {
+                    max-width: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .col {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -777,6 +930,14 @@ $height) {
                         font-size: 20px;
                     }
                 }
+            }
+        }
+        .urgent-repair {
+            .urgent-repair-title {
+                padding: 25px 5px;
+            }
+            h2 {
+                font-size: 18px;
             }
         }
     }
@@ -891,10 +1052,68 @@ $height) {
                 }
             }
         }
+        .urgent-repair {
+            .urgent-repair-block {
+                .urgent-repair-col {
+                    max-width: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .col {
+                    display: none;
+                }
+                .urgent-repair-form {
+                    background: #FCFCFC;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 400px;
+                    width: 100%;
+                    h3 {
+                        background: linear-gradient(180deg, #FF5C00 63.54%, rgba(255, 92, 0, 0) 100%);
+                        border-radius: 20px;
+                        margin: 0 auto;
+                        width: 100%;
+                        padding: 15px 0;
+                        font-size: 17.5px;
+                    }
+                    .send-phone-form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 30px 15px 20px;
+                        width: 100%;
+                        input {
+                            border: 2px solid #CACACA;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            height: 50px;
+                            width: 100%;
+                            padding: 0 10px
+                        }
+                        .btnSendPhone {
+                            @include button(100%,
+                            10px,
+                            40px);
+                            margin-top: 30px;
+                        }
+                        .btnSendPhone:hover {
+                            @include buttonHover();
+                        }
+                    }
+                    p {
+                        margin: 10px 0 20px;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media all and(max-width:350px) {
+@media all and(max-width:351px) {
     .header {
         .header-top {
             .header-logo {
@@ -908,6 +1127,16 @@ $height) {
                     color: #FFFFFF;
                     font-size: 13px;
                 }
+            }
+        }
+    }
+    .main {
+        .urgent-repair {
+            .urgent-repair-title {
+                padding: 25px 5px;
+            }
+            h2 {
+                font-size: 16px;
             }
         }
     }
