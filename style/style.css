@@ -661,7 +661,7 @@
 .main .urgent-repair {
   width: 100%;
   background: url(../img/bg-urgent.png) center no-repeat;
-  background-size: auto;
+  background-size: 100% 100%;
   padding: 100px 0;
 }
 
@@ -920,6 +920,9 @@
     width: 120px;
     height: 120px;
     font-size: 45px;
+  }
+  .main .urgent-repair {
+    background-size: cover;
   }
 }
 
