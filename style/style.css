@@ -237,7 +237,7 @@
 
 .main .hero {
   position: relative;
-  background: url(../img/bgpng.png) center no-repeat;
+  background: url(../img/bgpng.jpg) center no-repeat;
   background-size: cover;
   padding: 0 10px;
 }
@@ -658,6 +658,109 @@
   color: #FF5C00;
 }
 
+.main .quick-repair-list {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main .quick-repair-list h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.main .quick-repair-list .list-content {
+  max-width: 1170px;
+  width: 100%;
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 {
+  max-width: 500px;
+  width: 100%;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul {
+  margin-left: 40px;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li {
+  padding: 25px 15px 25px 50px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  background: linear-gradient(91.09deg, #5F24A8 39.53%, #05D2FF 107.7%);
+  border-radius: 27px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul .li-img {
+  display: inline-block;
+  border: 2px solid #5F24A8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 30px 5px rgba(82, 82, 82, 0.25);
+          box-shadow: 0px 1px 30px 5px rgba(82, 82, 82, 0.25);
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  left: -40px;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(1) .li-img {
+  background: url(../img/icons/icon1.png) center no-repeat, #ffffff;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(2) .li-img {
+  background: url(../img/icons/icon2.png) center no-repeat, #ffffff;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(3) .li-img {
+  background: url(../img/icons/icon3.png) center no-repeat, #ffffff;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(4) .li-img {
+  background: url(../img/icons/icon4.png) center no-repeat, #ffffff;
+}
+
+.main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(5) .li-img {
+  background: url(../img/icons/icon5.png) center no-repeat, #ffffff;
+}
+
+.main .quick-repair-list .list-content .list-content-block2 {
+  width: 450px;
+  z-index: -1;
+}
+
+.main .quick-repair-list .list-content .list-content-block2 img {
+  height: 370px;
+}
+
 .main .urgent-repair {
   width: 100%;
   background: url(../img/bg-urgent.png) center no-repeat;
@@ -920,6 +1023,49 @@
     width: 120px;
     height: 120px;
     font-size: 45px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul {
+    margin-left: 30px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li {
+    font-size: 16px;
+    padding: 20px 15px 20px 45px;
+    max-width: 340px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul .li-img {
+    width: 70px;
+    height: 70px;
+    left: -30px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(1) .li-img {
+    background-size: 50px 50px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(2) .li-img {
+    background-size: 50px 50px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(3) .li-img {
+    background-size: 50px 50px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(4) .li-img {
+    background-size: 50px 50px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(5) .li-img {
+    background-size: 50px 50px;
+  }
+  .main .quick-repair-list .list-content .list-content-block2 {
+    width: 450px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  .main .quick-repair-list .list-content .list-content-block2 img {
+    width: 100%;
+    height: auto;
   }
   .main .urgent-repair {
     background-size: cover;
@@ -1195,6 +1341,9 @@
   .main .pricelist .pricelist-content .table tr td:nth-child(3) {
     display: none;
   }
+  .main .quick-repair-list h2 {
+    font-size: 26px;
+  }
   .main .urgent-repair .urgent-repair-block .urgent-repair-col {
     max-width: 100%;
     width: 100%;
@@ -1246,6 +1395,24 @@
   .main .pricelist .pricelist-content .table tr td:nth-child(2) {
     min-width: 105px;
     font-size: 20px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 {
+    margin-right: 0;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul {
+    margin-left: 30px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul .li-img {
+    width: 70px;
+    height: 70px;
+    left: -30px;
+  }
+  .main .quick-repair-list .list-content .list-content-block2 {
+    display: none;
   }
   .main .urgent-repair .urgent-repair-title {
     padding: 25px 5px;
@@ -1366,6 +1533,38 @@
     font-size: 16px;
     line-height: 14px;
   }
+  .main .quick-repair-list .list-content .list-content-block1 {
+    margin-right: 0;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul {
+    margin-left: 15px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li {
+    font-size: 15px;
+    max-width: 100%;
+    padding: 15px 15px 15px 45px;
+    line-height: 17px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul .li-img {
+    width: 55px;
+    height: 55px;
+    left: -15px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(1) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(2) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(3) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(4) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(5) .li-img {
+    background-size: 35px 35px;
+  }
   .main .urgent-repair .urgent-repair-block .urgent-repair-col {
     max-width: 100%;
     width: 100%;
@@ -1466,7 +1665,7 @@
   }
 }
 
-@media all and (max-width: 351px) {
+@media all and (max-width: 356px) {
   .header .header-top .header-logo img {
     max-width: 100%;
     width: 60px;
@@ -1482,5 +1681,40 @@
   }
   .main .urgent-repair h2 {
     font-size: 16px;
+  }
+  .main .quick-repair-list h2 {
+    font-size: 25px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 {
+    margin-right: 0;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul {
+    margin-left: 15px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li {
+    height: 64px;
+    font-size: 15px;
+    max-width: 100%;
+    padding: 15px 15px 15px 55px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul .li-img {
+    width: 65px;
+    height: 65px;
+    left: -15px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(1) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(2) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(3) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(4) .li-img {
+    background-size: 35px 35px;
+  }
+  .main .quick-repair-list .list-content .list-content-block1 ul li:nth-child(5) .li-img {
+    background-size: 35px 35px;
   }
 }
