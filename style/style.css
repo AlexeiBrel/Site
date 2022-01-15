@@ -1046,7 +1046,7 @@
   width: 100%;
   background: url(../img/garant.png) center no-repeat;
   background-size: cover;
-  padding: 100px 10px;
+  padding: 100px 10px 50px;
   margin-top: -45px;
   z-index: -1;
   position: relative;
@@ -1060,7 +1060,7 @@
   background: #FFFFFF;
   border-radius: 17px;
   padding: 25px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 .main .garant h2 {
