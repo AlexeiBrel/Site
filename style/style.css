@@ -1011,7 +1011,7 @@
 }
 
 .main .garant .garant-content {
-  max-width: 790px;
+  max-width: 640px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,7 +1043,7 @@
 }
 
 .main .garant .garant-content .garant-about-list li {
-  padding: 5px 30px;
+  padding: 5px 0 5px 30px;
   background: url(../img/icons/star.png) center no-repeat;
   background-size: 22px 22px;
   background-position: 0 center;
@@ -1553,7 +1553,6 @@
     font-size: 18px;
   }
   .main .garant .garant-content .garant-about-list li {
-    padding: 5px 30px;
     background: url(../img/icons/star.png) center no-repeat;
     background-size: 22px 22px;
     background-position: 0 center;
@@ -1825,10 +1824,9 @@
     font-size: 18px;
   }
   .main .garant .garant-content .garant-about-list {
-    font-size: 18px;
+    font-size: 16px;
   }
   .main .garant .garant-content .garant-about-list li {
-    padding: 5px 30px;
     background: url(../img/icons/star.png) center no-repeat;
     background-size: 22px 22px;
     background-position: 0 center;
@@ -1917,7 +1915,6 @@
     font-size: 18px;
   }
   .main .garant .garant-content .garant-about-list li {
-    padding: 5px 30px;
     background: url(../img/icons/star.png) center no-repeat;
     background-size: 22px 22px;
     background-position: 0 center;

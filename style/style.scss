@@ -696,7 +696,7 @@ $height) {
             color: #000000;
         }
         .garant-content {
-            max-width: 790px;
+            max-width: 640px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -716,7 +716,7 @@ $height) {
                 font-size: 20px;
                 margin-bottom: 20px;
                 li {
-                    padding: 5px 30px;
+                    padding: 5px 0 5px 30px;
                     background: url(../img/icons/star.png) center no-repeat;
                     background-size: 22px 22px;
                     background-position: 0 center;
@@ -1205,7 +1205,6 @@ $height) {
                 .garant-about-list {
                     font-size: 18px;
                     li {
-                        padding: 5px 30px;
                         background: url(../img/icons/star.png) center no-repeat;
                         background-size: 22px 22px;
                         background-position: 0 center;
@@ -1447,9 +1446,8 @@ $height) {
             }
             .garant-content {
                 .garant-about-list {
-                    font-size: 18px;
+                    font-size: 16px;
                     li {
-                        padding: 5px 30px;
                         background: url(../img/icons/star.png) center no-repeat;
                         background-size: 22px 22px;
                         background-position: 0 center;
@@ -1558,7 +1556,6 @@ $height) {
                 .garant-about-list {
                     font-size: 18px;
                     li {
-                        padding: 5px 30px;
                         background: url(../img/icons/star.png) center no-repeat;
                         background-size: 22px 22px;
                         background-position: 0 center;
