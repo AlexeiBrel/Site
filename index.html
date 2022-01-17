@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animate.css">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/menu.js" defer></script>
     <script src="js/spincrement.js"></script>
     <script src="js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -21,7 +24,7 @@
     </div>
 
     <div class=" wrapper ">
-        <header class="header ">
+        <header class="header">
             <div class="header-content ">
                 <div class="header-top ">
                     <div class="header-logo ">
@@ -79,7 +82,7 @@
         </header>
         <main class="main ">
             <section class="hero ">
-                <div class="hero-title ">
+                <div class="hero-title wow bounceInLeft" data-wow-delay="0.7s">
                     <h1>Ремонт бытовой техники <br> в Мозыре</h1>
                     <ul>
                         <li>Отличные цены на запчасти</li>
@@ -89,7 +92,7 @@
                     <a href="tel: +375336803539 " class="heroBtn ">Заказать ремонт</a>
                 </div>
             </section>
-            <section class="trigger ">
+            <section class="trigger wow fadeInUp" data-wow-delay="0.7s">
                 <div class="trigger-content ">
                     <div class="trigger-item ">
                         <div class="trigger-img ">
@@ -158,14 +161,14 @@
                 <h2>Стоимость услуг</h2>
                 <p>Диагностика</p>
                 <div class="pricelist-diagnostics ">
-                    <div class="pricelist-item ">
+                    <div class="pricelist-item wow fadeInLeft" data-wow-delay="0.7s">
                         <div class="pricelist-img ">
                             <img src="img/price1.png " alt=" ">
                             <div class="pricelistimg-price ">0р</div>
                         </div>
                         <h3>Диагностика при последующем ремонте</h3>
                     </div>
-                    <div class="pricelist-item ">
+                    <div class="pricelist-item wow fadeInRight" data-wow-delay="0.7s">
                         <div class="pricelist-img ">
                             <img src="img/price2.png " alt=" ">
                             <div class="pricelistimg-price ">5р</div>
@@ -219,7 +222,7 @@
                 </div>
 
             </section>
-            <section class="quick-repair-list ">
+            <section class="quick-repair-list wow fadeInUpBig" data-wow-delay="0.7s">
                 <h2>ВЫПОЛНЯЕМ СРОЧНЫЙ РЕМОНТ И ПОЛОМКИ</h2>
                 <div class="list-content ">
                     <div class="list-content-block1 ">
@@ -322,6 +325,9 @@
             </div>
         </footer>
     </div>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

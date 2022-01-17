@@ -918,6 +918,11 @@ $height) {
                 color: #FFFFFF;
                 font-size: 30px;
                 margin-right: 20px;
+                transition: all.2s ease;
+            }
+            a:hover {
+                color: #fdc312;
+                text-decoration: none;
             }
             .footer-num {
                 color: #ffffff;

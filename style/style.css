@@ -1297,6 +1297,13 @@
   color: #FFFFFF;
   font-size: 30px;
   margin-right: 20px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer .footer-content .footer-item a:hover {
+  color: #fdc312;
+  text-decoration: none;
 }
 
 .footer .footer-content .footer-item .footer-num {

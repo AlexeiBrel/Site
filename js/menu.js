@@ -24,3 +24,5 @@ window.onload = function() {
         document.body.classList.remove('loaded_hiding');
     }, 5000);
 }
+
+// -----------initialization---------------//
