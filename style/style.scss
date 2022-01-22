@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat&family=Open+Sans&display=swap');
-@mixin button($width,
-$bRadius,
-$height) {
+@mixin button($width, $bRadius, $height) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,27 +91,6 @@ $height) {
 
 .lock {
     overflow: hidden;
-}
-
-.wrapper {
-    max-width: 100%;
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-}
-
-.wrapper.active::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .5);
-    z-index: 5;
 }
 
 .header {
@@ -246,7 +222,6 @@ $height) {
 }
 
 .main {
-    flex: 1 1 auto;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
@@ -279,9 +254,7 @@ $height) {
                 }
             }
             .heroBtn {
-                @include button(200px,
-                12px,
-                40px);
+                @include button(200px, 12px, 40px);
                 margin-top: 20px;
             }
             .heroBtn:hover {
@@ -372,9 +345,7 @@ $height) {
                     margin-top: 20px
                 }
                 .btnPrice {
-                    @include button(250px,
-                    10px,
-                    50px);
+                    @include button(250px, 10px, 50px);
                     margin-top: 20px;
                 }
                 .btnPrice:hover {
@@ -503,9 +474,7 @@ $height) {
             flex-direction: column;
             align-items: center;
             .btnOrder {
-                @include button(200px,
-                10px,
-                50px);
+                @include button(200px, 10px, 50px);
                 box-shadow: 2px 5px 10px #00BB34;
             }
             .btnOrder:hover {
@@ -769,9 +738,7 @@ $height) {
                         border: 2px solid #00BB34;
                     }
                     .btnSendPhone {
-                        @include button(100%,
-                        10px,
-                        40px);
+                        @include button(100%, 10px, 40px);
                         margin-top: 30px;
                     }
                     .btnSendPhone:hover {
@@ -953,6 +920,7 @@ $height) {
     }
 }
 
+// ---------------- MEDIA QUERIES ---------------------//
 @media all and(max-width:1023px) {
     .main {
         .trigger {
@@ -1673,9 +1641,7 @@ $height) {
                             padding: 0 10px
                         }
                         .btnSendPhone {
-                            @include button(100%,
-                            10px,
-                            40px);
+                            @include button(100%, 10px, 40px);
                             margin-top: 30px;
                         }
                         .btnSendPhone:hover {
