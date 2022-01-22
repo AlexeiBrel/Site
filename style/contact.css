@@ -1,0 +1,121 @@
+.main {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .title {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 50px auto 0;
+}
+
+.main .title h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #2b2b2b;
+}
+
+.main .title article {
+  max-width: 1024px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2b2b2b;
+  padding: 10px 0;
+}
+
+.main .section-form {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main .section-form .form-content {
+  margin: 20px 0;
+}
+
+.main .section-form .form-content .form {
+  max-width: 1024px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .section-form .form-content .form .valid {
+  height: 50px;
+  width: 100%;
+  line-height: 20px;
+  padding: 5px 15px;
+  margin-top: 2.2em;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 12px;
+}
+
+.main .section-form .form-content .form .textarea {
+  resize: vertical;
+  height: 130px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+
+.main .section-form .form-content .form .valid:focus {
+  border: 1px solid #14c714;
+}
+
+.main .section-form .form-content .form .btnSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 12px;
+  background: #00BB34;
+  -webkit-box-shadow: 2px 8px 30px #00BB34;
+          box-shadow: 2px 8px 30px #00BB34;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.main .section-form .form-content .form .btnSubmit:hover {
+  background: #fdc312;
+  -webkit-box-shadow: 2px 8px 30px #fdc312;
+          box-shadow: 2px 8px 30px #fdc312;
+}
+
+.main .section-form .input-block {
+  position: relative;
+  width: 100%;
+}
+
+.main .section-form .message {
+  color: #ec5f5f;
+  font-size: 15px;
+  top: 8px;
+  position: absolute;
+}

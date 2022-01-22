@@ -8,47 +8,37 @@ function validateEmail(email) {
 
 function mes(selector, message) {
     let elem = document.querySelector(selector);
-
-    // elem.style.border = '1px solid rgb(228, 81, 81)';
     elem.style.boxShadow = '0 0 7px 3px rgb(228, 81, 81)';
-    elem.placeholder = `${message}`;
+
+    if (document.querySelector('.message')) { document.querySelector('.message').remove(); }
+    elem.insertAdjacentHTML('beforeBegin', `<p class='message'>${message}</p>`);
 }
 
-$('#full-name').on('click', () => {
-    $('#full-name').css('box-shadow', 'none');
-    document.querySelector('#full-name').placeholder = 'Name';
+$('.valid').on('click', () => {
+    $('.valid').css('box-shadow', 'none');
+    if (document.querySelector('.message')) {
+        document.querySelector('.message').remove();
+    }
 })
 
-$('#email').on('click', () => {
-    $('#email').css('box-shadow', 'none');
-    document.querySelector('#email').placeholder = 'Email';
-})
-
-$('#subject').on('click', () => {
-    $('#subject').css('box-shadow', 'none');
-    document.querySelector('#subject').placeholder = 'Subject';
-})
-
-$('#message').on('click', () => {
-    $('#message').css('box-shadow', 'none');
-    document.querySelector('#message').placeholder = 'Message';
-})
 
 function checkForm() {
-    let res1 = document.querySelector('#full-name').value.length > 1;
-    if (!res1) { mes('#full-name', 'You need to write a name'); return false; }
+    let res1 = $('#full-name').val().length > 1;
+    if (!res1) { mes('#full-name', 'Введите своё имя!'); return false; }
 
-    let res2 = validateEmail(document.querySelector('#email').value);
-    if (!res2) { mes('#email', 'Incorrect mail'); return false; }
+    let res2 = validateEmail($('#email').val());
+    if (!res2) { mes('#email', 'Email введён некорректно!'); return false; }
 
-    let res3 = document.querySelector('#subject').value.length > 2;
-    if (!res3) { mes('#subject', 'Subject must be at least 2 characters'); return false; }
+    let res3 = $('#subject').val().length > 1;
+    if (!res3) { mes('#subject', 'Введите тему письма!'); return false; }
 
-    let res4 = document.querySelector('#message').value.length > 1;
-    if (!res4) { mes('#message', 'You need to write a message'); return false; }
+    let res4 = $('#message').val().length > 25;
+    if (!res4) { mes('#message', 'Введите сообщение!'); return false; }
 
     if (res1 && res2 && res3 && res4) { return true; } else { return false; }
 }
+
+
 
 btnSend.addEventListener('click', (e) => {
     if (!checkForm()) {

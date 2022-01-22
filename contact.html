@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/headerFooter.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/valid.js" defer></script>
 </head>
 
 <body>
@@ -75,7 +78,31 @@
                 </div>
             </div>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <section class="title">
+                <h2>Контакты</h2>
+                <article>Оставьте свое сообщение, и мы обязательно ответим на все ваши вопросы ! </article>
+            </section>
+            <section class="section-form">
+                <div class="form-content">
+                    <form action="#" class="form">
+                        <div class="input-block">
+                            <input type="text" class="valid" name="Name" id="full-name" placeholder="Ваше имя" maxlength="30">
+                        </div>
+                        <div class="input-block">
+                            <input type="text" class="valid" name="Email" id="email" placeholder="Ваш Email" maxlength="40">
+                        </div>
+                        <div class="input-block">
+                            <input type="text" class="valid" name="Subject" id="subject" placeholder="Тема письма" maxlength="40">
+                        </div>
+                        <div class="input-block">
+                            <textarea name="Message" class="valid textarea" placeholder="Сообщение" id="message" maxlength="1500" maxlength="700"></textarea>
+                        </div>
+                        <button class="btnSubmit" type="button" id="btnSend">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
         <footer class="footer ">
             <div class="footer-content ">
                 <div class="footer-top ">
