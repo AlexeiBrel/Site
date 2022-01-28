@@ -283,9 +283,9 @@ ol {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #9370DB;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    border-top-color: hsl(260, 60%, 65%);
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
     z-index: 101;
 }
 
@@ -299,8 +299,8 @@ ol {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #BA55D3;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 #loader:after {
@@ -313,8 +313,8 @@ ol {
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #FF00FF;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -340,8 +340,8 @@ ol {
 }
 
 .loaded_hiding .preloader {
-    -webkit-transition: 2s opacity;
-    transition: 2s opacity;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
     opacity: 0;
 }
 
